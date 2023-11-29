@@ -1,0 +1,77 @@
+.Paragraph{
+    border-width: 2;
+    border-color: red;
+    background-color: aqua;
+    color: green;
+    padding: 5px;
+    border-style: solid; border-width: 2;   
+}
+.Title{
+    color: blueviolet;
+}
+
+div.notify{
+    position: relative;
+    border: 3px solid #73AD21;
+    color: aliceblue;
+    width: 400px;
+    height: 20px;
+    padding: 5px;
+    margin: 5px;
+}
+
+div.Danger{    
+    background-color: red;
+}
+div.Success{
+    background-color:  green; ;
+}
+div.Info{
+    background-color: rgb(0, 94, 255);
+}
+div.Warning{
+    background-color: orange;
+}
+.close{
+    width: 20px;
+    height: 20px;
+
+    font-size: large;
+    color: whitesmoke;
+    position: absolute;
+    top: 5px;
+    right: 0px;
+}
+textarea{
+    width: 90%;
+}
+form{
+    width: 600px;
+    background-color: #73AD21;
+}
+form  table {
+    
+    background-color: antiquewhite;
+    width: 600px;
+}
+td textarea {
+    width: 99%;
+}
+td input{
+    height: 25px;
+    width: 99%;
+}
+input.city{
+    margin: 5px;
+    width: 40%;
+}
+td select{
+    position: relative;
+    left: 10px;
+    height: 30px;
+    width: 95%;
+}
+td input.radio{
+    width: auto;
+    padding: 5px;
+}

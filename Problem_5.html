@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lab 7</title>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+</head>
+
+<body>
+    <p>press "X" to close notify or wating for 5s</p>
+
+    <div id="pr5_1" class="notify Danger" >DANGER             
+        <div onclick="this.parentElement.style.display='none'" class="close">X </div>
+    </div>
+    <div  class=" notify Success">SUCCESS
+        <div onclick="this.parentElement.style.display='none'" class="close">X </div>
+    </div>
+    <div  class="notify Info">INFO
+        <div onclick="this.parentElement.style.display='none'" class="close">X </div>
+    </div>
+    <div  class="notify Warning">WARNING
+        <div onclick="this.parentElement.style.display='none'" class="close">X </div>
+    </div>
+    <script>
+        function closeNotify(){ 
+            var i, x;
+            x = document.getElementsByClassName("notify");
+            for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+            }
+        }
+        setTimeout(closeNotify, 5000);
+    </script>
+
+</body>
+
+</html>

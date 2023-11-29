@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+<html>
+    <body>
+        <form onsubmit="problem_6()" name="myform">
+            <table border="1">
+                <tr>
+                    <th>Fullname*</th>
+                    <td>
+                        <input name="Name" type="text"
+                            placeholder="Enter your fullname"
+                            required="required" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>Email*</th>
+                    <td>
+                        <input name="Email" type="email"
+                            placeholder="Enter your email" required="required" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>password*</th>
+                    <td>
+                        <input
+                            name="Password"
+                            type="password"
+                            placeholder="Enter your password"
+                            required="required" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>Confirm Passwork*</th>
+                    <td>
+                        <input
+                            name="ConfirmPassword"
+                            type="password"
+                            placeholder="Confirm your password"
+                            required="required" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>Phone Number*</th>
+                    <td><input name="Phone" type="tel" required="required" /></td>
+                </tr>
+                <tr>
+                    <th>Address</th>
+                    <td>
+                        <textarea name="Address" id="000" cols="30" rows="5"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <th>City</th>
+                    <td>
+                        <input type="text" name="City" class="city"><label for="state"><b>State</b></label><input class="city"
+                            type="text" name="State" id="state">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Zip/Postal Code</th>
+                    <td>
+                        <input
+                            name="Zip"
+                            type="text"
+                            placeholder="Enter your Zip/Postal Code" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>Country</th>
+                    <td>
+                        <select name="Country" id="001">
+                            <option value="China">China</option>
+                            <option value="Vietnam">Vietnam</option>
+                            <option value="USA">USA</option>
+                            <option value="Japan">Japan</option>
+                            <option value="SouthKorea">South Korea</option>
+                            <option value="NorthKorea">North Korea</option>
+                            <option value="Campuchia">Campuchia</option>
+                            <option value="France">France</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Birthday</th>
+                    <td><input type="date" name="Birthday"></td>
+                </tr>
+                <tr>
+                    <th>Gender</th>
+                    <td>
+                        <select name="Gender" id="002">
+                            <option value="male" selected="selected">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Starting date</th>
+                    <td>
+                        <input class="radio" type="radio" name="date[]" value="spring"
+                            id="radio_0" />
+                        <label for="radio_0">Spring</label>
+                        <input class="radio" type="radio" name="date[]" value="summer"
+                            id="radio_1" />
+                        <label for="radio_1">Summer</label>
+                        <input class="radio" type="radio" name="date[]" value="fall"
+                            id="radio_2" />
+                        <label for="radio_2">Fall</label>
+                        <input class="radio" type="radio" name="date[]" value="winter"
+                            id="radio_3" />
+                        <label for="radio_3">Winter</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Comments</th>
+                    <td>
+                        <textarea
+                            name="Comments"
+                            id="003"
+                            cols="30"
+                            rows="5"
+                            placeholder="Please send us more information"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <button type="submit">Submit</button><br>
+                        <p id="error"></p>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

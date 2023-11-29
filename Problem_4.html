@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Lab 7</title>
+        <script src="./script.js"></script>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="./style.css">
+
+        <!-- <link rel="stylesheet" href="./style.css"> -->
+    </head>
+
+    <body>
+        <div class="w3-container">
+            <h2>Tabbed Image Gallery</h2>
+            <p>Click on the images below:</p>
+        </div>
+
+        <div class="w3-row-padding">
+
+            <div class="w3-col s3 w3-container">
+                <a href="javascript:void(0)" class="w3-hover-opacity"
+                    onclick="problem_4('Danbo1');">
+                    <img src="./img/img1.png" style="width:30%">
+                </a>
+            </div>
+
+            <div class="w3-col s3 w3-container">
+                <a href="javascript:void(0)" class="w3-hover-opacity"
+                    onclick="problem_4('Danbo2');">
+                    <img src="./img/img2.png" style="width:30%">
+                </a>
+            </div>
+
+            <div class="w3-col s3 w3-container">
+                <a href="javascript:void(0)" class="w3-hover-opacity"
+                    onclick="problem_4('Danbo3');">
+                    <img src="./img/img3.png" style="width:30%">
+                </a>
+            </div>
+
+            <div class="w3-col s3 w3-container">
+                <a href="javascript:void(0)" class="w3-hover-opacity"
+                    onclick="problem_4('Danbo4');">
+                    <img src="./img/img4.png" style="width:30%">
+                </a>
+            </div>
+        </div>
+        <br>
+
+        <div id="Danbo1" class="picture w3-display-container"
+            style="display:none">
+            <img src="./img/img1.png" style="width:30%">
+            <span onclick="this.parentElement.style.display='none'"
+                class="w3-display-topright w3-button w3-transparent w3-text-white">&times;</span>
+            <div
+                class="w3-display-bottomleft w3-container w3-padding w3-text-white">Danbo
+                1</div>
+        </div>
+        <div id="Danbo2" class="picture w3-display-container"
+            style="display:none">
+            <img src="./img/img2.png" style="width:30%">
+            <span onclick="this.parentElement.style.display='none'"
+                class="w3-display-topright w3-button w3-transparent w3-text-white">&times;</span>
+            <div
+                class="w3-display-bottomleft w3-container w3-padding w3-text-white">Danbo
+                2</div>
+        </div>
+        <div id="Danbo3" class="picture w3-display-container"
+            style="display:none">
+            <img src="./img/img3.png" style="width:30%">
+            <span onclick="this.parentElement.style.display='none'"
+                class="w3-display-topright w3-button w3-transparent w3-text-white">&times;</span>
+            <div
+                class="w3-display-bottomleft w3-container w3-padding w3-text-white">Danbo
+                3</div>
+        </div>
+        <div id="Danbo4" class="picture w3-display-container"
+            style="display:none">
+            <img src="./img/img4.png" style="width:30%">
+            <span onclick="this.parentElement.style.display='none'"
+                class="w3-display-topright w3-button w3-transparent w3-text-white">&times;</span>
+            <div
+                class="w3-display-bottomleft w3-container w3-padding w3-text-white">Danbo
+                4</div>
+        </div>
+
+    </body>
+
+</html>
